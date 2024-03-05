@@ -29,8 +29,20 @@ const equalsButton = `
 `
 document.querySelector('.equals').innerHTML = equalsButton;
 
-document.querySelector('.submitButton').addEventListener('click', solveEquation)
+const clearButton = `
+  <button type="submit" class="clearButton">
+    CLEAR
+  </button>
+`
+document.querySelector('.clear').innerHTML = clearButton;
 
+function clearScreen() {
+  document.querySelector('.numba1').value = '';
+  document.querySelector('.numba2').value = '';
+  document.querySelector('.answer').innerHTML = '';
+}
+
+document.querySelector('.clearButton').addEventListener('click', clearScreen)
 
 function solveEquation() {
   event.preventDefault();
@@ -50,3 +62,5 @@ function solveEquation() {
 
   document.querySelector('.answer').innerHTML = ans;
 };
+
+document.querySelector('.submitButton').addEventListener('click', solveEquation)
