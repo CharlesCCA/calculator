@@ -60,7 +60,9 @@ function solveEquation() {
     ans = num1 / num2;
   } 
 
-  document.querySelector('.answer').innerHTML = ans;
+  ansDisplay = ans.toFixed(4);
+
+  document.querySelector('.answer').innerHTML = ansDisplay;
 };
 
 document.querySelector('.submitButton').addEventListener('click', solveEquation)
