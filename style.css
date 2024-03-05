@@ -36,11 +36,28 @@ body {
   justify-content: center;
 }
 
+.buttons {
+  display: flex;
+  margin: 10px;
+}
+
 .submitButton {
   width: 250px;
   font-size: 48px;
   background-color: darkblue;
   color: yellow;
+  box-shadow: 3px 3px black;
+  padding: 5px;
+  padding-bottom: 10px;
+  justify-content: center;
+}
+
+.clearButton {
+  width: 250px;
+  font-family: 'Silkscreen';
+  font-size: 48px;
+  background-color: yellow;
+  color: darkblue;
   box-shadow: 3px 3px black;
   padding: 5px;
   padding-bottom: 10px;
